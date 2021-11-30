@@ -1,0 +1,27 @@
+{
+  "name": "studion",
+  "version": "0.0.1",
+  "description": "\u0016Homepage for Studion Events provider and services.",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breramos/Studion.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Brenda Ramos Bezerra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/breramos/Studion/issues"
+  },
+  "homepage": "https://github.com/breramos/Studion#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
