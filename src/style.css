@@ -5,14 +5,15 @@
 }
 
 :root {
-    --color-primary: #ffc500;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    --color-primary: #ffc500;
+    --default-padding: 1rem;
 }
 
 body {
     margin: 0;
-    padding-top: 8rem;
+    padding-top: 6.4rem;
 }
 
 ul {
@@ -28,7 +29,7 @@ ul {
     color: #fff;
     display: grid;
     grid-template-columns: 1fr 9fr;
-    height: 7.75rem;
+    height: 8rem;
     padding: 0 1rem;
     position: fixed;
     top: 0;
@@ -71,4 +72,15 @@ ul {
 
 .copy--primary {
     color: var(--color-primary);
+}
+
+#slider {
+    background-color: #000;
+    background-image: url('./images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    height: calc(100vh - 6.4rem);
+    padding: var(--default-padding);
 }
