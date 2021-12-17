@@ -5,11 +5,12 @@
 }
 
 :root {
-    --color-primary: #ffc500;
-    --default-padding: 1rem;
-    color: #333;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    --color-copy: #333;
+    --color-primary: #ffc500;
+    --default-padding: 1rem;
+    color: var(--color-copy);
 }
 
 body {
@@ -23,6 +24,11 @@ footer {
     overflow-x: hidden;
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 
 ul {
     display: flex;
@@ -32,17 +38,21 @@ ul {
 
 
 .navbar {
-    align-items: center;
-    background-color: #000;
-    color: #fff;
-    display: grid;
-    grid-template-columns: 1fr 9fr;
-    height: 8rem;
-    padding: 0 1rem;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
+    width: 100%;
+    background-color: #000;  /*vermelho / verde / azul / transparência/ -0 -F */
+    color: #fff;
+}
+
+.navbar__container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    height: 8rem;
+    padding: 0 1rem;
     width: 100vw;
 }
 
@@ -90,7 +100,7 @@ ul {
 
 .slide {
     position: relative;
-    height: calc(100vh - 6.4rem);
+    height: calc(95vh - 6.4rem);
     
 }
 
@@ -103,7 +113,7 @@ ul {
 
 .slide__copy {
     position: absolute;
-    top: 6.25rem;
+    top: 4rem;
     left: 50vw;
 }
 
@@ -138,7 +148,7 @@ ul {
     transition: 0.3s all ease;
 }
 
-.btn:hover, .btn:active, .btn:focus {
+.btn:hover, .btn:active, .btn:focus, .btn--institutional {
     border-color: var(--color-primary);
     background-color: var(--color-primary);
     color: #fff;
@@ -154,7 +164,6 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     place-items: center;
-    margin: 0;
     padding: 4.375rem 1rem;
 }
 
@@ -173,6 +182,10 @@ ul {
     gap: 3.125rem;
     align-items: center;
     padding: 4.375rem;
+}
+
+.institutional__image {
+    max-width: 550px;
 }
 
 .institutional__copy {
@@ -195,4 +208,12 @@ ul {
 .institutional p {
     font-size: 1.0625rem;
     line-height: 1.6875rem;
+    margin-bottom: 0;
+    margin-bottom: 2.5rem;
+}
+
+.btn--institutional:hover {
+    color: var(--color-copy);
+    background: unset;
+    box-shadow: 0 1rem 1rem #0006;
 }
