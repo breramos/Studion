@@ -16,6 +16,7 @@
 body {
     margin: 0;
     padding-top: 6.4rem;
+    /* alterei de 7.75rem para 6.4 rem devido à quebra de elementos */
 }
 
 header, 
