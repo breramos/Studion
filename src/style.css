@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 
 * {
     box-sizing: border-box; 
@@ -80,7 +82,8 @@ ul {
 .logo-studion {
     font-size: 2.375rem;
     font-weight: 900;
-    line-height: 0.8ch; 
+    line-height: 0.95ch; 
+    /* alterei de 0.8ch para 0.95ch, pois quando a propriedade display block foi adicionada na class .logo-studion__subtitle referente ao footer, o subtítulo grudou no h1 do header e h2 do footer */
     text-transform: uppercase;
     text-align: right;
 }
@@ -268,4 +271,43 @@ ul {
     color: var(--color-copy);
     border-color: var(--color-copy);
     background: unset;
+}
+.footer {
+     background-color: #000;
+     color: #fff;
+     padding: 0 1rem;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    padding: 5.25rem 0 3.75rem 0;
+}
+
+.footer .logo-studion {
+    justify-self: start;
+    margin: 0;
+}
+
+.logo-studion__subtitle {
+    display: block;
+}
+
+.footer__form {
+    justify-self: center;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 5.625rem auto;
+}
+
+.footer__form fieldset {
+    border: unset;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__social {
+    justify-self: end;
 }
