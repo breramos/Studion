@@ -1,0 +1,42 @@
+.navbar {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* anotação sobre o código hexadecimal: vermelho / verde / azul / transparência/ -0 -F */
+    color: #fff;
+}
+
+.navbar__container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    height: 8rem;
+    padding: 0 1rem;
+    width: 100vw;
+}
+
+.navbar__links {
+    justify-self: end;
+}
+
+.navbar__links li {
+    font-size: .875rem;
+    margin-right: 3rem;
+    text-transform: uppercase;
+}
+
+.navbar__links a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.navbar__links a.active {
+    color: var(--color-primary);
+}
+
+.navbar__links a:hover {
+    color: var(--color-primary);
+}
