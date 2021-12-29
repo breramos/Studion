@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box; 
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--color-copy);
+}
+
+body {
+    margin: 0;
+    /*padding-top: 6.4rem;
+    alterei de 7.75rem para 6.4 rem devido à quebra de elementos */
+}
+
+header, 
+main,
+footer {
+    overflow-x: hidden;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.logo-studion {
+    font-size: 2.375rem;
+    font-weight: 900;
+    line-height: 0.95ch; 
+    /* alterei de 0.8ch para 0.95ch, pois quando a propriedade display block foi adicionada na class .logo-studion__subtitle referente ao footer, o subtítulo grudou no h1 do header e h2 do footer */
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.logo-studion__subtitle {
+    font-size: .875rem;
+    font-weight: 300;
+}
+
+.logo-studion a {
+    text-decoration: none;
+    color: #fff;
+}
+
