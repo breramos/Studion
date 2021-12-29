@@ -40,6 +40,7 @@
     grid-template-columns: 1.5rem auto;
     gap: .625rem;
     align-items: center;
+    font-family: "Roboto";
     font-weight: 700;
     line-height: 1.6875rem;
 }
@@ -58,6 +59,30 @@
     display: block;
 }
 
+.contact__form label {
+    font-weight: 700;
+}
+
+.contact__form input {
+    width: 100%;
+    margin-bottom: 1.875rem;
+    padding: 1rem;
+    background: unset;
+    border: unset;
+    border-bottom: 0.06rem solid #fff;
+    color: #fff;
+    font-size: 0.5rem 0;
+}
+
+.contact__form input:focus {
+    outline: unset;
+}
+
 .contact__form button {
     float: right;
+}
+
+.maps,
+.maps iframe {
+    height: 36.5rem;
 }
