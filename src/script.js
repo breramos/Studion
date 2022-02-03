@@ -12,11 +12,10 @@ $(document).ready(() => {
         const numbersCollection = document.querySelectorAll(".counter__number");
 
         numbersCollection.forEach((number) => {
-            console.log(number.innerHTML);
             const currentNumber = parseInt(number.innerHTML);
-            number.innerHTML = currentNumber + 1;
+            //number.innerHTML = currentNumber + 1;
         });
-    }, 5000);
+    }, 1000);
         
     //const counterOptions = {
         //delay: 10,
