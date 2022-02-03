@@ -9,6 +9,19 @@ $(document).ready(() => {
     $('.slider').slick(slickOptions);
       
     setInterval(() => {
-        const numberCollection = document.querySelectorAll('.counter__number');
-    }, 1000);
+        const numbersCollection = document.querySelectorAll(".counter__number");
+
+        numbersCollection.forEach((number) => {
+            console.log(number.innerHTML);
+            const currentNumber = parseInt(number.innerHTML);
+            number.innerHTML = currentNumber + 1;
+        });
+    }, 5000);
+        
+    //const counterOptions = {
+        //delay: 10,
+        //time: 1000,
+    //};
+
+    //$('.counter__number').counterUp(counterOptions);
 });
