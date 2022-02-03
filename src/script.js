@@ -15,7 +15,7 @@ $(document).ready(() => {
             const currentNumber = parseInt(number.innerHTML);
             //number.innerHTML = currentNumber + 1;
         });
-    }, 1000);
+    }, 5000);
         
     //const counterOptions = {
         //delay: 10,
