@@ -3,13 +3,30 @@
     color: #fff;
 }
 
+.slider__prev-arrow,
+.slider__next-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 5px solid #fff;
+    border-right: unset;
+    border-bottom: unset;
+    opacity: 0.8;
+}
+
 .slider__prev-arrow {
     z-index: 1;
-    left: 0;
+    left: 2rem;
+    transform: rotate(-45deg);
 }
 
 .slider__next-arrow {
-    right: 0;
+    right: 2rem;
+    transform: rotate(135deg);
+}
+
+.slider__prev-arrow::before,
+.slider__next-arrow::before {
+    content: "";
 }
 
 .slide {
