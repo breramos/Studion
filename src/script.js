@@ -23,4 +23,22 @@ $(document).ready(() => {
     //};
 
     //$('.counter__number').counterUp(counterOptions);
+    $('.footer__form-button').on('click', () => {
+        const email = $('#email').val();
+        Email.send({
+            Host : "smtp.yourisp.com",
+            Username : "username",
+            Password : "password",
+            To : 'them@website.com',
+            From : email,
+            Subject : "Please, add me to your newsletter",
+            Body : `Olá,
+            I would like to receive your newsletter website.
+            Meu e-mail é ${email}.
+            Obrigado(a)!
+            `,
+        }).then(
+          (message) => alert(message)
+        );
+    });
 });
