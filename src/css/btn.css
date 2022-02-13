@@ -20,6 +20,9 @@
     background-color: var(--color-primary);
     color: #fff;
 }
+.btn--slide {
+    margin-bottom: 2rem;
+}
 
 .btn--institutional:hover,
 .btn--contact:hover {
