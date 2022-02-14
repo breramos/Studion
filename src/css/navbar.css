@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 1fr 9fr;
     height: 8rem;
-    padding: 0 2rem;
+    padding: 0;
     width: 100vw;
 }
 
