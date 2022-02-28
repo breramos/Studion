@@ -21,22 +21,33 @@
     color: #fff;
 }
 
-.btn--institutional {
+.btn--institutional,
+.btn--quote {
     display: block;
     margin: 0 auto;
 }
 
 @media screen and (min-width: 1280px) {
-    .btn--institutional {
-        display: unset;
-        margin: unset;
+    .btn--institutional,
+    .btn--quote {
+        display: inline;
     }
 
-}
+} 
 
+/*para centralizar o botão => quando apliquei essa propriedade, o width não foi mais necessário porque o botão ficou com tamanho adequado*/
+/*width: 50%; minha solução temporária para ajustar o tamanho do botão*/
 
 .btn--slide {
-    margin-bottom: 2rem;
+    margin: 0 auto;  
+}
+
+@media screen and (min-width: 1280px) {
+    .btn--slide {
+        display: inline;
+        margin-bottom: 2rem;
+        /*width: 30%;*/
+    }
 }
 
 .btn--institutional:hover,
