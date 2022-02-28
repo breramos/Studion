@@ -31,9 +31,13 @@
     content: "";
 }
 
+.slick-arrow {
+    visibility: hidden;
+}
+
 @media screen and (min-width: 1280px) {
     .slick-arrow {
-        display: block;
+        visibility: visible;
     }
 }
 
@@ -79,9 +83,6 @@
         display: inline;
     }
 
-    .btn--slide {
-        width: 30%;
-    }
 }
 
 .slide__copy h6 {
@@ -197,29 +198,52 @@
 
 .quote {
     background-image: url(../images/parallax.jpg);
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: auto 40%; /*contain; esse valor usa 100% da largura disponível e vai atribuir a altura de maneira automática*/
+    background-position: 40% top;
 }
+
+@media screen and (min-width: 1280px) {
+    .quote {
+        /*background-image: url(../images/parallax.jpg);*/
+        background-attachment: fixed;
+        /*background-repeat: no-repeat;*/
+        background-size: cover;
+        background-position: center;
+    }
+}    
 
 .quote__container {
     display: grid;
-    align-items: center;
+    align-items: end;
     justify-items: end;
-    min-height: 85vh; 
+    min-height: 100vh; 
     /* alterei min-height de 80vh para 85vh */
+}
+
+@media screen and (min-width: 1280px) {
+    .quote__container {
+        align-items: center;
+        min-height: 85vh; 
+    }
 }
 
 .quote__copy {
     background-color: #fff;
-    padding: 5.625rem 4.375rem;
-    padding-bottom: 5.3125rem;
-    /* adicionei um padding-bottom porque não estava parecido com o do prof */
+    padding: 1rem;
+    padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 1280px) {
+    .quote__copy {
+        padding: 5.625rem 4.375rem;
+        padding-bottom: 5.3125rem;
+        /* adicionei um padding-bottom porque não estava parecido com o do prof */
+    }
 }
 
 .quote__copy h6 {
-    font-size: .9375rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: .1875rem;
     line-height: 1.4375rem;
@@ -229,8 +253,8 @@
 }
 
 .quote__copy h2 {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 4rem;
+    line-height: 4rem;
     text-transform: uppercase;
     letter-spacing: -.1875rem;
     margin: 1.875rem 0;
@@ -240,3 +264,13 @@
     display: block;
 }
 
+@media screen and (min-width: 1280px) {
+    .quote__copy h6 {
+        font-size: .9375rem;
+    }
+
+    .quote__copy h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+}
